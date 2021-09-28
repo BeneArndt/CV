@@ -1,0 +1,39 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+    <style type="text/css">
+
+    </style>
+  </head>
+
+  <body>
+    <p>How many fingers am i holding up</p>
+    <p><input type="text" id="inputnumber"></p>
+    <p><button id="button">Confirm Guess</button><p>
+    <script type="text/javascript">
+    //Javascript for the homepage
+        var fingers = Math.floor(Math.random()*6)
+
+        var guess = document.getElementById("inputnumber").value
+
+        document.getElementById("button").onclick = function() {
+
+          if(guess == fingers){
+
+            alert("Guess was right")
+
+          }else{
+
+            alert("try again the number was" + fingers)
+
+          }
+        }
+
+
+    </script>
+
+  </body>
+
+</html>
