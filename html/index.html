@@ -3,7 +3,7 @@
   <head>
 
     <!==================== css =========================>
-    <link rel="stylesheet" href="css/styles.css"></link>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"></link>
 
     <!==================== Icons CSS =========================>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -16,32 +16,37 @@
               <a href="#" class="nav_logo">Benedikt Arndt</a>
               <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
-                  <li class="nav-item">
+                  <li class="nav_item">
                     <a href="#home" class="nav_link">
-                      <i class="uil uil-home"></i> Home
+                      <i class="uil uil-home nav_icon"></i> Home
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav_item">
                     <a href="#profil" class="nav_link">
-                      <i class="uil uil-user-md"></i> Profil
+                      <i class="uil uil-user-md nav_icon"></i> Profil
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav_item">
                     <a href="#skills" class="nav_link">
-                      <i class="uil uil-file"></i> Fähigkeiten
+                      <i class="uil uil-file nav_icon"></i> Fähigkeiten
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav_item">
                     <a href="#portfolio" class="nav_link">
-                      <i class="uil uil-mountains-sun"></i> Lebenslauf
+                      <i class="uil uil-mountains-sun nav_icon"></i> Lebenslauf
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav_item">
                     <a href="#contact" class="nav_link">
-                      <i class="uil uil-fast-mail"></i> Kontakt
+                      <i class="uil uil-fast-mail nav_icon"></i> Kontakt
                     </a>
                   </li>
                 </ul>
+              </div>
+              <div class="nav_btns">
+                <div class="nav_toggle" id="nav-toggle">
+                  <i class="uil uil-times" id="nav-toggle-icon"></i>
+                </div>
               </div>
             </nav>
         </header>
@@ -50,18 +55,73 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-
+              <div class="home_container container grid">
+                <div class="home_content grid">
+                  <div class="home_social">
+                    <a href="https://www.linkedin.com/in/benedikt-arndt-9a41a8220/" target="_blank"class="home_social-icon">
+                      <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/GottBenz" target="_blank" class="home_social-icon">
+                      <i class="uil uil-github"></i>
+                    </a>
+                  </div>
+                  <div class="home_img">
+                  <svg class="home_blob"viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#FF0066" d="M32.5,-27.3C46.2,-18.9,64,-9.4,64.9,0.9C65.8,11.2,49.7,22.4,36,31.6C22.4,40.7,11.2,47.9,-5,52.8C-21.2,57.8,-42.3,60.7,-50.9,51.5C-59.4,42.3,-55.4,21.2,-55.6,-0.3C-55.9,-21.7,-60.5,-43.4,-51.9,-51.8C-43.4,-60.2,-21.7,-55.4,-6.1,-49.3C9.4,-43.1,18.9,-35.7,32.5,-27.3Z" transform="translate(100 100)" />
+                  </svg>
+                  </div>
+                  <div class="home_data">
+                    <h1 class="home_title">Benedikt Arndt</h1>
+                    <h3 class="home_subtitle">Student(Wirtschaftsinformatik)</h3>
+                    <p class="home_description">Versucht Webentwicklung zu lernen :)</p>
+                    <a href="#contact" class="button button--flex">
+                      Kontaktiere mich<i class="uil uil-fast-mail nav_icon button_icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
+                <h2 class="section_title">About Me</h2>
+                <span class="section_subtitle">My Introduction</span>
+                <div class="about_container container grid">
+                  <img src="https://lh3.googleusercontent.com/proxy/qUgqRG0aReXA_jLDyJkArUVDP_HQyA6sQto1GJxD0900xPAbnwl7gns85M7FgkjLABXI_yqRgi41fUG8Gohp6FvAEx8BObXREqUsSI2KjJD5SOFm31aH" alt="" class="about_img">
+                  <p class="about_description">Student, with a little bit of experience
+                  in Webdevelopment and tries to get better day by day without wasting a single minute playing league of legends</p>
+                  <div class="about_info">
+
+                    <div class=""
+                      <span class="about_info_title">2</span>
+                      <span class="about_info-name">Completed <br> projects</span>
+                    ></div>
+
+                    <div class=""
+                      <span class="about_info_title">0+</span>
+                      <span class="about_info-name">Companies <br> worked</span>
+                    ></div>
+
+                    <div class=""
+                      <span class="about_info_title">I dont </span>
+                      <span class="about_info-name">know what to put here</span>
+                    ></div>
+
+                    <div class="about_buttons"></div>
+                    <a href="" class="button button--flex">
+                      <i class="uil uil.download-alt button_icon"></i>
+                    </a>
+                  </div>
+                </div>
 
 
             </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
+              <div class="skills_container container grid">
 
+              </div>
 
             </section>
 
@@ -112,10 +172,9 @@
 
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="js/main.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
     </body>
 
 </html>
