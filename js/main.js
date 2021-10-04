@@ -2,7 +2,9 @@
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close'),
-      navToggleIcon = document.getElementById('nav-toggle-icon')
+      navToggleIcon = document.getElementById('nav-toggle-icon'),
+      skillContent = document.getElementsByClassName('skills_content'),
+      skillsHeader = document.querySelectorAll('.skills_header')
 /*show menu*/
   navToggle.addEventListener('click',() =>{
     toggleMenu();
@@ -21,3 +23,18 @@ function toggleMenu(){
     navToggleIcon.classList.remove('uil-apps');
   }
 }
+/* skills menu */
+function toggleSkills(){
+
+  let itemclass = this.parentNode.className
+
+  for(i = 0; i < skillContent.length; i++){
+    skillContent[i].className = 'skills_content skills_close'
+  }
+  if(itemclass == 'skills_content skills_close'){
+    this.parentNode.className = 'skills_content skills_open'
+  }
+}
+skillsHeader.forEach((el) =>{
+  el.addEventListener('click', toggleSkills)
+})

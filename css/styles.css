@@ -284,6 +284,124 @@ img{
   margin-bottom: var(--mb-2-5);
   line-height: 20px;
 }
+.about_info{
+  display:flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-1);
+}
+
+.about_info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  display: block;
+  text-align: center;
+
+}
+.about_info-name{
+  font-size: var(--smaller-font-size);
+  display: block;
+  text-align: center;
+}
+
+.about_buttons{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+
+}
+
+/*==================== Skills ====================*/
+
+.skills_arrow,
+.skills_icon{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+.skills_icon{
+  margin-right: var(--mb-0-5);
+}
+.skills_arrow{
+  margin-left: auto;
+  transition: .4s;
+}
+.skills_container{
+  row-gap: 0;
+}
+.skills_header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+
+}
+.skills_title{
+  font-size: var(--h3-font-size);
+}
+.skills_subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.skills_titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+.skills_list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+.skills_name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.skills_number{
+
+}
+.skills_bar{
+  background-color: var(--first-color-lighter);
+}
+.skills_percentage{
+  display: block;
+  background-color: var(--first-color);
+
+}
+.skills_bar,
+.skills_percentage{
+  height: 5px;
+  border-radius: .25rem;
+}
+.skills_html{
+  width: 65%;
+}
+.skills_css{
+  width: 50%;
+}
+.skills_js{
+  width: 20%;
+}
+.skills_java{
+  width: 50%;
+}
+.skills_python{
+  width: 20%;
+}
+.skills_c{
+  width: 60%;
+}
+.skills_close .skills_list{
+  height: 0;
+  visibility: hidden;
+}
+.skills_open .skills_list{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+.skills_open .skills_arrow{
+  transform: rotate(-180deg);
+}
+
 /* Active link */
 
 
