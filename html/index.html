@@ -5,6 +5,9 @@
     <!==================== css =========================>
     <link rel="stylesheet" type="text/css" href="/css/styles.css"></link>
 
+    <!====================SWIPER css =========================>
+    <link rel="stylesheet" type="text/css" href="/css/swiper-bundle.min.css"></link>
+
     <!==================== Icons CSS =========================>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
@@ -22,7 +25,7 @@
                     </a>
                   </li>
                   <li class="nav_item">
-                    <a href="#profil" class="nav_link">
+                    <a href="#about" class="nav_link">
                       <i class="uil uil-user-md nav_icon"></i> Profil
                     </a>
                   </li>
@@ -66,9 +69,6 @@
                     </a>
                   </div>
                   <div class="home_img">
-                  <svg class="home_blob"viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#FF0066" d="M32.5,-27.3C46.2,-18.9,64,-9.4,64.9,0.9C65.8,11.2,49.7,22.4,36,31.6C22.4,40.7,11.2,47.9,-5,52.8C-21.2,57.8,-42.3,60.7,-50.9,51.5C-59.4,42.3,-55.4,21.2,-55.6,-0.3C-55.9,-21.7,-60.5,-43.4,-51.9,-51.8C-43.4,-60.2,-21.7,-55.4,-6.1,-49.3C9.4,-43.1,18.9,-35.7,32.5,-27.3Z" transform="translate(100 100)" />
-                  </svg>
                   </div>
                   <div class="home_data">
                     <h1 class="home_title">Benedikt Arndt</h1>
@@ -87,7 +87,7 @@
                 <h2 class="section_title">About Me</h2>
                 <span class="section_subtitle">My Introduction</span>
                 <div class="about_container container grid">
-                  <img src="https://lh3.googleusercontent.com/proxy/qUgqRG0aReXA_jLDyJkArUVDP_HQyA6sQto1GJxD0900xPAbnwl7gns85M7FgkjLABXI_yqRgi41fUG8Gohp6FvAEx8BObXREqUsSI2KjJD5SOFm31aH" alt="" class="about_img">
+                  <img src="https://image.gala.de/22522770/t/W7/v3/w1440/r1.5/-/05--wie-ein-unternehmer-die-welt-veraenderte---3-2---spoton-article-1007191.jpg" alt="" class="about_img">
                   <p class="about_description">Student, with a little bit of experience
                   in Webdevelopment and tries to get better day by day without wasting a single minute playing league of legends</p>
                   <div class="about_info">
@@ -249,38 +249,178 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
+              <h2 class="section_title">Qualification</h2>
+              <span class="section_subtitle">My personal journey</span>
+              <div class="qualification_container container">
+                <div class="qualification_tabs">
+                  <div class="qualification_button button--flex qualification_active" data-target="#education">
+                    <i class="uil uil-graduation-cap qualification_icon"></i>
+                    Education
+                  </div>
 
+                  <div class="qualification_button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification_icon"></i>
+                    Work
+                  </div>
+                </div>
+                <div class="qualification_sections">
+                  <!--==================== QUALIFICATION Content 1====================-->
+                  <div class="qualification_content qualification_active" data-content id="education">
+                    <!--==================== QUALIFICATION 1====================-->
+                    <div class="qualification_data">
+                      <div>
+                        <h3 class="qualification_title">Allgemeine Hochschulreife
+                        </h3>
+                        <span class="qualification_subtitle">Wasserburg am Inn</span>
+                        <div class="qualification_calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          2009-2018
+                        </div>
+                      </div>
 
-            </section>
+                      <div>
+                        <span class="qualification_rounder"></span>
+                        <span class="qualification_line"></span>
+                      </div>
+                    </div>
+                    <!--==================== QUALIFICATION 2====================-->
+                    <div class="qualification_data">
+                      <div></div>
+                      <div>
+                        <span class="qualification_rounder"></span>
+                        <span class="qualification_line"></span>
+                      </div>
+                      <div>
+                        <h3 class="qualification_title">Elektrotechnik
+                        </h3>
+                        <span class="qualification_subtitle">TUM</span>
+                        <div class="qualification_calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          2018-2019
+                        </div>
+                      </div>
+                    </div>
+                    <!--==================== QUALIFICATION 3====================-->
+                    <div class="qualification_data">
+                      <div>
+                        <h3 class="qualification_title">Wirtschaftsinformatik
+                        </h3>
+                        <span class="qualification_subtitle">Universität Augsburg</span>
+                        <div class="qualification_calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          2019-now
+                        </div>
+                      </div>
+
+                      <div>
+                        <span class="qualification_rounder"></span>
+                        <!--<span class="qualification_line"></span>-->
+                      </div>
+                    </div>
+                  </div>
+                  <!--==================== QUALIFICATION Content 2====================-->
+                  <div class="qualification_content" data-content id="work">
+                    <!--==================== QUALIFICATION 1====================-->
+                    <div class="qualification_data">
+                      <div>
+                        <h3 class="qualification_title">
+                        </h3>
+                        <span class="qualification_subtitle"></span>
+                        <div class="qualification_calendar">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </section>
 
             <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-
-
-            </section>
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
+              <h2 class="section_title">Portfolio</h2>
+              <span class="section_subtitle">Aktuelle Arbeit und geplante Projekte</h2>
 
-
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-
-
+              <div class="portfolio_container container swiper swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!--==================== PORTFOLIO 1====================-->
+                  <div class="portfolio_content swiper-slide">
+                    <img src="/img/portfolio1.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio_data">
+                      <h3 class="portfolio_title">Eigene Internetseite</h3>
+                      <p class="portfolio_description">Internetseite für alle Endgeräte</p>
+                      <a href="#" class="button button--flex button-small portfolio_button">
+                        Demo
+                      </a>
+                    </div>
+                  </div>
+                  <!--==================== PORTFOLIO 2====================-->
+                  <div class="portfolio_content swiper-slide">
+                    <img src="/img/portfolio3.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio_data">
+                      <h3 class="portfolio_title">Backend Project</h3>
+                      <p class="portfolio_description">Trying to create a Movieranking</p>
+                      <a href="#" class="button button--flex button-small portfolio_button">
+                        Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="swiper-button-next">
+                  <i class="swiper-portfolio-icon"></i>
+                  </div>
+                  <div class="swiper-button-prev">
+                  <i class="swiper-portfolio-icon"></i>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
             </section>
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-
-
+              <h2 class="section_title">Kontaktiere Mich</h2>
+              <span class="section_subtitle"></span>
+              <div class="contact_container">
+                <div class="contact_information">
+                  <i class="uil uil-phone contact_icon"></i>
+                  <h3 class="contact_title">Ruf mich an</h3>
+                  <span class="contact_subtitle">+49 1794184385</span>
+                </div>
+                <div class="contact_information">
+                  <i class="uil uil-envelope contact_icon"></i>
+                  <h3 class="contact_title">E-Mail</h3>
+                  <span class="contact_subtitle">benearndt99@gmail.com</span>
+                </div>
+                <div class="contact_information">
+                  <i class="uil uil-map-marker contact_icon"></i>
+                  <h3 class="contact_title">Location</h3>
+                  <span class="contact_subtitle">Augsburg</span>
+                </div>
+                <form action="" class="contact_form grid">
+                  <div class="contact_inputs grid">
+                    <div class="contact_content">
+                      <label for="" class="contact_label">Name</label>
+                      <input type="text" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                      <label for="" class="contact_label">Email</label>
+                      <input type="text" class="contact_input">
+                    </div>
+                  </div>
+                  <div class="contact_content">
+                    <label for="" class="contact_label">Message</label>
+                    <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                  </div>
+                  <div class="">
+                    <a href="#" class="button button--flex">
+                      Send Message
+                      <i class="uil uil-message button_icon"></i>
+                    </a>
+                  </div>
+                </form>
+              </div>
             </section>
         </main>
 
@@ -294,7 +434,7 @@
 
 
         <!--==================== SWIPER JS ====================-->
-
+        <script type="text/javascript" src="/js/swiper-bundle.min.js"></script>
         <!--==================== MAIN JS ====================-->
         <script type="text/javascript" src="/js/main.js"></script>
     </body>
